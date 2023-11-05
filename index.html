@@ -29,74 +29,59 @@
   <body>
     <main>
       <!-- Sidebar start -->
-      <section>
-        <div>Step 1 Your info</div>
-        <div>Step 2 Select plan</div>
-        <div>Step 3 Add-ons</div>
-        <div>Step 4 Summary</div>
-      </section>
-      <section id="content">
-        <!-- Sidebar end -->
-
-        <!-- Step 1 start -->
-        <div>
-          <h1 class="blue">Personal info</h1>
-          <p>Please provide your name, email address, and phone number.</p>
-          <p class="blue">Name</p>
-          <input type="text" class="text" placeholder=" e.g. Stephen King" />
-
-          <p class="blue">Email Address</p>
-          <input
-            type="text"
-            class="text"
-            placeholder="e.g. stephenking@lorem.com"
-          />
-
-          <p class="blue">Phone Number</p>
-          <input type="text" class="text" placeholder="e.g. +1 234 567 890" />
-          <button>Next Step</button>
+      <section id="sidebar">
+        <div class="side_box">
+          <div class="option_box">
+            <div class="num active">1</div>
+            <div><span>Step 1</span> <strong>Your info</strong></div>
+          </div>
+          <div class="option_box">
+            <div class="num">2</div>
+            <div><span>Step 2</span> <strong>Select plan</strong></div>
+          </div>
+          <div class="option_box">
+            <div class="num">3</div>
+            <div><span>Step 3</span> <strong>Add-ons</strong></div>
+          </div>
+          <div class="option_box">
+            <div class="num">4</div>
+            <div><span>Step 4</span> <strong>Summary</strong></div>
+          </div>
         </div>
+      </section>
+      <!-- Sidebar end -->
+      <section id="content">
+        <div class="content_box">
+          <!-- Step 1 start -->
+          <div>
+            <div>
+              <h1 class="blue">Personal info</h1>
+              <p>Please provide your name, email address, and phone number.</p>
+              <p class="blue">Name</p>
+              <input
+                type="text"
+                class="text"
+                placeholder=" e.g. Stephen King"
+              />
 
-        <!-- Step 1 end -->
+              <p class="blue">Email Address</p>
+              <input
+                type="text"
+                class="text"
+                placeholder="e.g. stephenking@lorem.com"
+              />
 
-        Step 2 start Select your plan You have the option of monthly or yearly
-        billing. Arcade $9/mo Advanced $12/mo Pro $15/mo Monthly Yearly Go Back
-        Next Step
-
-        <!-- Step 2 end -->
-
-        <!-- Step 3 start -->
-
-        Pick add-ons Add-ons help enhance your gaming experience. Online service
-        Access to multiplayer games +$1/mo Larger storage Extra 1TB of cloud
-        save +$2/mo Customizable Profile Custom theme on your profile +$2/mo Go
-        Back Next Step
-
-        <!-- Step 3 end -->
-
-        <!-- Step 4 start -->
-
-        Finishing up Double-check everything looks OK before confirming.
-
-        <!-- Dynamically add subscription and add-on selections here -->
-
-        Total (per month/year) Go Back Confirm
-
-        <!-- Step 4 end -->
-
-        <!-- Step 5 start -->
-
-        Thank you! Thanks for confirming your subscription! We hope you have fun
-        using our platform. If you ever need support, please feel free to email
-        us at support@loremgaming.com.
-
-        <!-- Step 5 end -->
-
-        <div class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
+              <p class="blue">Phone Number</p>
+              <input
+                type="text"
+                class="text"
+                placeholder="e.g. +1 234 567 890"
+              />
+            </div>
+            <div class="btn_box">
+              <button>Next Step</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
