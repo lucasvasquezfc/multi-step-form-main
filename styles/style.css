@@ -30,15 +30,18 @@ body {
 main {
     background-color: var(--White);
     border-radius: 20px; 
+    margin: 10px;
     padding: 1rem;
     max-width: 800px;
     min-height: 600px;
     display: flex;
+    justify-content: space-between;
 }
 
 button{
     display: block;
     padding: 14px 28px;
+    height: 40px;
     border-radius: 6px;
     background-color: var(--marine-blue);
     color: var(--White);
@@ -52,25 +55,41 @@ button:active {
     transform: scale(0.98);
 }
 
-#content {
+#content {    height: 100%;
     color: var(--Cool-gray);
     font-size: 16px;
     padding: 20px;
+    width:100%;
+    display: flex;
+    justify-content: center;
 }
 
 .content_box{
     height: 100%;
-    display: flex;
+    width: 80%;
+    margin-right: 0px;
     min-width: 275px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.content_box div{
+.content_box_items{
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: flex-end;
+    justify-content: flex-end
 }
+
+.btn_box {
+    display: flex;
+    align-items: flex-end;
+}
+
+.first_content {
+    /* display: none; */
+}
+
+
+
 
 #sidebar .side_box{
     background-image: url(./../assets/images/bg-sidebar-desktop.svg);
@@ -127,3 +146,5 @@ input::placeholder{
     background-color: var(--Magnolia);
     color: var(--marine-blue);
 }
+
+/* ### FIRST CONTENT */
