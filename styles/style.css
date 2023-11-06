@@ -27,12 +27,17 @@ body {
     margin: auto;
 }
 
+h1 {
+    font-size: 32px;
+}
+
 main {
     background-color: var(--White);
     border-radius: 20px; 
+    box-shadow: 0px 0px 40px  2px var(--Light-gray);
     margin: 10px;
     padding: 1rem;
-    max-width: 800px;
+    max-width: 1024px;
     min-height: 600px;
     display: flex;
     justify-content: space-between;
@@ -40,13 +45,13 @@ main {
 
 button{
     display: block;
-    padding: 14px 28px;
-    height: 40px;
+    padding: 16px 28px;
     border-radius: 6px;
     background-color: var(--marine-blue);
     color: var(--White);
     border: none;
     cursor: pointer;
+    font-size: 16px;
 }
 button:hover{
     filter: brightness(1.2);
@@ -76,7 +81,8 @@ button:active {
 .content_box_items{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end
+    justify-content: flex-end;
+    padding: 0px 20px;
 }
 
 .btn_box {
@@ -86,10 +92,12 @@ button:active {
 
 .first_content {
     /* display: none; */
+    
 }
 
-
-
+.first_content_title h1, .first_content_title p{
+    margin: 0;
+}
 
 #sidebar .side_box{
     background-image: url(./../assets/images/bg-sidebar-desktop.svg);
@@ -103,7 +111,8 @@ button:active {
 }
 
 input {
-    padding: 10px;
+    font-size: 16px;
+    padding: 16px;
     width: 100%;
     border-radius: 8px;
     border: solid 1px var(--Light-gray);
