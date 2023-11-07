@@ -132,10 +132,18 @@ input::placeholder{
     background-repeat: no-repeat;
     background-size: auto;
     color: var(--White);
-    padding: 30px;
+    padding: 40px 32px;
     border-radius: 10px;
     height: 100%;
     width: 275px ;
+}
+
+.side_box span{
+    font-size: 12px;
+}
+
+.side_box strong {
+    font-size: 16px;
 }
 
 
@@ -161,10 +169,21 @@ input::placeholder{
 .option_box .num {
     color: var(--White);
     border: solid 1px var(--White);
-    padding: 10px 15px;
+    padding: 7px 11px;
     margin-bottom: 30px;
-    margin-right: 10px;
+    margin-right: 14px;
     border-radius: 100%;
+    cursor: pointer;
+}
+
+.option_box .num:hover {
+    background-color: rgba(255, 255, 255, 0.171);
+    filter: brightness(1.2);
+}
+
+
+.option_box .num:active {
+    transform: scale(0.98);
 }
 
 .option_box .num.active {
