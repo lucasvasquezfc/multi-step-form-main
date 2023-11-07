@@ -215,7 +215,7 @@ button:active {
 
 /* ### FIRST CONTENT */
 .first_content {
-    /* display: none; */
+    display: none;
     width: 100%;    
 }
 
@@ -237,4 +237,38 @@ button:active {
     align-content: space-between;
     margin: 21px 0;
     height: 75px;
+}
+
+/* ### SECOND CONTENT */
+
+.second_content {
+    /* display: none; */
+    width: 100%;    
+}
+
+.second_content_title {
+    margin: 25px 0 10px 0;
+    height: 68px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.card_box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.card_item {
+    width: 140px;
+    height: 182px;
+    border: solid 1px var(--marine-blue);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h4 {
+    color: var(--marine-blue);
 }
