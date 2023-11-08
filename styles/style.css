@@ -318,7 +318,7 @@ button:active {
 
 
 .third_content {
-    /* display: none; */
+    display: none;
     width: 100%;    
 }
 
@@ -377,6 +377,17 @@ button:active {
 .check_card:hover, .check_card:focus, .check_card:active {
     background-color: var(--Alabaster);
     border-color: var(--marine-blue);
+}
+
+.check_icon input {
+    accent-color: var(--purplish-blue);
+}
+
+/* ###########  4 CONTENT ###########  */
+
+.fourth_content {
+    /* display: none; */
+    width: 100%;    
 }
 
 
