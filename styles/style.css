@@ -322,12 +322,21 @@ button:active {
     width: 100%;    
 }
 
+.check_box_items {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
 .check_card {
     width: 100%;
+    height: 84px;
     display: flex;
     border: solid 1px var(--Light-gray);
     cursor: pointer;
     border-radius: 10px;
+    margin: 6px 0;
 }
 
 .check_icon{
@@ -338,7 +347,8 @@ button:active {
     align-content: center;
     flex-wrap: wrap;
 }
-
+    
+  
 .check_text {
     width: 100%;
     padding: 0 10px;
@@ -362,6 +372,11 @@ button:active {
 }
 .check_card p {
     font-size: 14px;
+}
+
+.check_card:hover, .check_card:focus, .check_card:active {
+    background-color: var(--Alabaster);
+    border-color: var(--marine-blue);
 }
 
 
