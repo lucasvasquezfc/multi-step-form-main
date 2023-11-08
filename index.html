@@ -105,7 +105,7 @@
                 <p>You have the option of monthly or yearly billing.</p>
               </div>
               <div class="card_box">
-                <div class="card_item">
+                <div tabindex="0" class="card_item">
                   <img src="assets/images/icon-arcade.svg" alt="icon-arcade" />
                   <div>
                     <p class="text_title">Arcade</p>
@@ -113,7 +113,7 @@
                     <p class="text_free">2 months free</p>
                   </div>
                 </div>
-                <div class="card_item">
+                <div tabindex="0" class="card_item">
                   <img src="assets/images/icon-advanced.svg" />
                   <div>
                     <p class="text_title">Advanced</p>
@@ -121,7 +121,7 @@
                     <p class="text_free">2 months free</p>
                   </div>
                 </div>
-                <div class="card_item">
+                <div tabindex="0" class="card_item">
                   <img src="assets/images/icon-pro.svg" alt="icon-arcade" />
                   <div>
                     <p class="text_title">Pro</p>
@@ -132,7 +132,11 @@
               </div>
               <div class="selector_type">
                 <p>Monthly</p>
-                <p>Yearly</p>
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+                <p class="text_selected">Yearly</p>
               </div>
             </div>
 
