@@ -229,7 +229,7 @@ button:active {
 
 /* ############ FIRST CONTENT ################################### */
 .first_content {
-    display: none;
+    /* display: none; */
     width: 100%;    
 }
 
@@ -449,7 +449,7 @@ hr.new1 {
 /* ################ 5 CONTENT ################################ */
 
 .fifth_content {
-    /* display: none; */
+    display: none;
     width: 100%; 
 }
 
