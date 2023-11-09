@@ -446,6 +446,33 @@ hr.new1 {
     display: flex;
 }
 
+/* ################ 5 CONTENT ################################ */
+
+.fifth_content {
+    /* display: none; */
+    width: 100%; 
+}
+
+.fifth_content div {
+    margin-top: 54px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fifth_content img {
+    padding: 30px;
+}
+
+.fifth_content p {
+    padding: 14px 0px;
+    text-align: center;
+    line-height: 26px;
+}
 
 
 
