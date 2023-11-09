@@ -116,6 +116,7 @@ button:active {
     background-color: var(--White);
     color: var(--Cool-gray);
     font-weight: bold;
+    padding: 16px 56px 16px 0;
 }
 
 #content {    
@@ -145,7 +146,7 @@ button:active {
 }
 
 
-/* ### SIDE BAR */
+/* ################# SIDE BAR #################################*/
 
 #sidebar .side_box{
     background-image: url(./../assets/images/bg-sidebar-desktop.svg);
@@ -213,13 +214,13 @@ button:active {
     color: var(--marine-blue);
 }
 
-/* ### FIRST CONTENT */
+/* ############ FIRST CONTENT ################################### */
 .first_content {
     display: none;
     width: 100%;    
 }
 
-.first_content_title {
+.content_title {
     margin: 25px 0 10px 0;
     height: 68px;
     display: flex;
@@ -239,19 +240,11 @@ button:active {
     height: 75px;
 }
 
-/* ### SECOND CONTENT */
+/* ############## SECOND CONTENT #################################*/
 
 .second_content {
-    /* display: none; */
+    display: none;
     width: 100%;    
-}
-
-.second_content_title {
-    margin: 25px 0 10px 0;
-    height: 68px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
 }
 
 .card_box {
@@ -321,7 +314,138 @@ button:active {
     color: var(--marine-blue);
 }
 
-/* ############# Rounded sliders */
+
+/*  ########## 3 CONTENT ##################################### */
+
+
+.third_content {
+    display: none;
+    width: 100%;    
+}
+
+.check_box_items {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.check_card {
+    width: 100%;
+    height: 84px;
+    display: flex;
+    border: solid 1px var(--Light-gray);
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 6px 0;
+}
+
+.check_icon{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+    
+  
+.check_text {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.check_price {
+    width: 110px;
+    height: 80px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.check_card .text_title {
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+.check_card p {
+    font-size: 14px;
+}
+
+.check_card:hover, .check_card:focus, .check_card:active {
+    background-color: var(--Alabaster);
+    border-color: var(--marine-blue);
+}
+
+.check_icon input {
+    accent-color: var(--purplish-blue);
+}
+
+/* ###########  4 CONTENT #####################################  */
+
+.fourth_content {
+    /* display: none; */
+    width: 100%;    
+}
+
+.box_content_finishing {
+    margin: 36px 0 25px 0;
+    background-color: var(--Alabaster);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.box_content_finishing .box_one {
+    margin: 8px 5px;
+}
+
+.box_content_finishing .box_two div{
+    display: flex;    
+    height: 55px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+hr.new1 {
+    border-top: 1px solid var(--Light-gray);    
+    margin: 16px 5px;
+}
+
+.flex_space_center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_content_total {
+    padding: 0 20px;
+}
+
+.text_lower{
+    font-size: 14px;
+}
+
+.font_md {
+    font-size: 22px;
+}
+
+.text_bold {
+     color: var(--marine-blue);     
+     font-weight: bold;
+}
+
+.card_flex {
+    display: flex;
+}
+
+
+
+
+
+/* ############# Rounded sliders ################################*/
 
 .switch {
     position: relative;
@@ -389,4 +513,5 @@ button:active {
     border-radius: 50%;
   }
 
-  /* ########################## */
+  /* ########################################################### */
+
