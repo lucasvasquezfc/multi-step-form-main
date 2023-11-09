@@ -214,12 +214,6 @@ button:active {
     color: var(--marine-blue);
 }
 
-/* ############ FIRST CONTENT ################################### */
-.first_content {
-    display: none;
-    width: 100%;    
-}
-
 .content_title {
     margin: 25px 0 10px 0;
     height: 68px;
@@ -232,12 +226,23 @@ button:active {
      margin: 39px 0;
 }
 
-.first_content_items div{
+
+/* ############ FIRST CONTENT ################################### */
+.first_content {
+    display: none;
+    width: 100%;    
+}
+
+.content_items {
+    margin: 38px 0;
+}
+
+.content_items div{
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    margin: 21px 0;
-    height: 75px;
+    margin: 20px 0;
+    height: 76px;
 }
 
 /* ############## SECOND CONTENT #################################*/
@@ -387,7 +392,7 @@ button:active {
 /* ###########  4 CONTENT #####################################  */
 
 .fourth_content {
-    /* display: none; */
+    display: none;
     width: 100%;    
 }
 
