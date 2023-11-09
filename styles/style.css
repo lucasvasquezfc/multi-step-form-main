@@ -145,7 +145,7 @@ button:active {
 }
 
 
-/* ### SIDE BAR */
+/* ################# SIDE BAR #################################*/
 
 #sidebar .side_box{
     background-image: url(./../assets/images/bg-sidebar-desktop.svg);
@@ -213,7 +213,7 @@ button:active {
     color: var(--marine-blue);
 }
 
-/* ### FIRST CONTENT */
+/* ############ FIRST CONTENT ################################### */
 .first_content {
     display: none;
     width: 100%;    
@@ -239,7 +239,7 @@ button:active {
     height: 75px;
 }
 
-/* ### SECOND CONTENT */
+/* ############## SECOND CONTENT #################################*/
 
 .second_content {
     display: none;
@@ -314,7 +314,7 @@ button:active {
 }
 
 
-/*  ########## 3 CONTENT ############# */
+/*  ########## 3 CONTENT ##################################### */
 
 
 .third_content {
@@ -383,15 +383,42 @@ button:active {
     accent-color: var(--purplish-blue);
 }
 
-/* ###########  4 CONTENT ###########  */
+/* ###########  4 CONTENT #####################################  */
 
 .fourth_content {
     /* display: none; */
     width: 100%;    
 }
 
+.box_content_finishing {
+    margin: 36px 0 25px 0;
+    background-color: var(--Alabaster);
+    padding: 20px;
+    border-radius: 10px;
+}
 
-/* ############# Rounded sliders */
+.box_content_flex{
+    display: flex;
+}
+
+.box_content_total {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text_final{
+    font-size: 14px;
+}
+
+.price_final {
+    color: var(--marine-blue);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* ############# Rounded sliders ################################*/
 
 .switch {
     position: relative;
@@ -459,5 +486,5 @@ button:active {
     border-radius: 50%;
   }
 
-  /* ########################## */
+  /* ########################################################### */
 
