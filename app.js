@@ -4,6 +4,15 @@ const next = document.getElementById('next');
 const circles = document.querySelectorAll('.num');
 
 let currentActive = 0;
+let circlesLength = circles.length;
+
+for (let i = 0; i < circles.length; i++) {
+  circles[i].addEventListener('click', () => {
+    let a = circles[i].innerText;
+    currentActive = a - 1;
+    update();
+  });
+}
 
 next.addEventListener('click', () => {
   currentActive++;
@@ -44,16 +53,4 @@ function update() {
       circle.classList.remove('active');
     }
   });
-
-  // const actives = document.querySelectorAll('.active');
-  // if (currentActive === 1) {
-  //   prev.disabled = true;
-  // } else if (currentActive === circles.length) {
-  //   next.disabled = true;
-  // } else {
-  //   prev.disabled = false;
-  //   next.disabled = false;
-  // }
-
-  console.log(currentActive);
 }
