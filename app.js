@@ -52,5 +52,11 @@ function update() {
     } else {
       circle.classList.remove('active');
     }
+
+    if (currentActive == 0) {
+      prev.style.visibility = 'hidden';
+    } else {
+      prev.style.visibility = 'visible';
+    }
   });
 }
