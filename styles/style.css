@@ -112,7 +112,6 @@ button:active {
     color: var(--White);
 }
 .btn_back  {
-    /* visibility: hidden; */
     background-color: var(--White);
     color: var(--Cool-gray);
     font-weight: bold;

@@ -3,15 +3,28 @@ const prev = document.getElementById('back');
 const next = document.getElementById('next');
 const circles = document.querySelectorAll('.num');
 const box = document.querySelector('.content_box_items');
+const pages = document.querySelectorAll('.pages');
 
-const firstPage = document.querySelector('.first_content');
-const secondPage = document.querySelector('.second_content');
-const thirdPage = document.querySelector('.third_content');
-const fourthPage = document.querySelector('.fourth_content');
-const fifthPage = document.querySelector('.fifth_content');
+function display() {
+  pages.forEach((page, index) => {
+    if (index == currentActive) {
+      page.style.display = 'block';
+    } else {
+      page.style.display = 'none';
+    }
 
-let currentActive = 0;
-let circlesLength = circles.length;
+    if (currentActive == 0) {
+      prev.style.visibility = 'hidden';
+    } else {
+      prev.style.visibility = 'visible';
+    }
+    if (currentActive == 4) {
+      next.style.visibility = 'hidden';
+    } else {
+      next.style.visibility = 'visible';
+    }
+  });
+}
 
 function changeDisplay() {
   if (currentActive == 0) {
@@ -42,8 +55,10 @@ function changeDisplay() {
 
   if (currentActive == 4) {
     fifthPage.style.display = 'block';
+    next.style.visibility = 'hidden';
   } else {
     fifthPage.style.display = 'none';
+    next.style.visibility = 'visible';
   }
 }
 
@@ -62,7 +77,8 @@ function update() {
       circle.classList.remove('active');
     }
 
-    changeDisplay();
+    display();
+    // changeDisplay();
   });
 }
 
