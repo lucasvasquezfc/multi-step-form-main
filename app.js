@@ -62,9 +62,7 @@ next.addEventListener('click', () => {
     currentActive = circles.length;
   }
 
-  if (currentActive > 3) {
-    currentActive = 3;
-  }
+  if (currentActive > 3) currentActive = 3;
 
   update();
 });
@@ -72,9 +70,7 @@ next.addEventListener('click', () => {
 prev.addEventListener('click', () => {
   currentActive--;
 
-  if (currentActive < 0) {
-    currentActive = 0;
-  }
+  if (currentActive < 0) currentActive = 0;
 
   update();
 });
