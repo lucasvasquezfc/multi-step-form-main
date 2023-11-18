@@ -1,287 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | Multi-step form</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./styles/style.css" />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+  <title>Frontend Mentor | Multi-step form</title>
 
-    <script src="app.js" defer></script>
-  </head>
-  <body>
-    <main>
-      <!-- Sidebar start -->
-      <section id="sidebar">
-        <div class="side_box">
-          <div class="option_box">
-            <div class="num active">1</div>
-            <div><span>Step 1</span> <strong>Your info</strong></div>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <!-- Sidebar start -->
+    <section id="sidebar">
+      <div class="side_box">
+        <div class="option_box">
+          <div class="num active">1</div>
+          <div><span>Step 1</span> <strong>Your info</strong></div>
+        </div>
+        <div class="option_box">
+          <div class="num">2</div>
+          <div><span>Step 2</span> <strong>Select plan</strong></div>
+        </div>
+        <div class="option_box">
+          <div class="num">3</div>
+          <div><span>Step 3</span> <strong>Add-ons</strong></div>
+        </div>
+        <div class="option_box">
+          <div class="num">4</div>
+          <div><span>Step 4</span> <strong>Summary</strong></div>
+        </div>
+      </div>
+    </section>
+    <!-- Sidebar end -->
+    <section id="content">
+      <div class="content_box">
+        <!-- Step 1 start -->
+        <div class="content_box_items">
+          <div class="pages first_content">
+            <div class="content_title">
+              <h1 class="blue">Personal info</h1>
+              <p>
+                Please provide your name, email address, and phone number.
+              </p>
+            </div>
+            <div class="content_items">
+              <div>
+                <p class="blue">
+                  Name<span class="error_text">Error_Text</span>
+                </p>
+                <input type="text" class="text" placeholder=" e.g. Stephen King" />
+              </div>
+
+              <div>
+                <p class="blue">
+                  Email Address<span class="error_text">Error_Text</span>
+                </p>
+                <input type="email" class="text" placeholder="e.g. stephenking@lorem.com" />
+              </div>
+              <div>
+                <p class="blue">
+                  Phone Number<span class="error_text">Error_Text</span>
+                </p>
+
+                <input type="text" class="text" placeholder="e.g. +1 234 567 890" />
+              </div>
+            </div>
           </div>
-          <div class="option_box">
-            <div class="num">2</div>
-            <div><span>Step 2</span> <strong>Select plan</strong></div>
+          <!-- Step 1 end -->
+          <!-- Step 2 start -->
+
+          <div class="pages second_content">
+            <div class="content_title">
+              <h1 class="blue">Select your plan</h1>
+              <p>You have the option of monthly or yearly billing.</p>
+            </div>
+            <div class="card_box">
+              <div tabindex="0" class="card_item">
+                <img src="assets/images/icon-arcade.svg" alt="icon-arcade" />
+                <div>
+                  <p class="text_title">Arcade</p>
+                  <p>$9/mo</p>
+                  <p class="text_free">2 months free</p>
+                </div>
+              </div>
+              <div tabindex="0" class="card_item">
+                <img src="assets/images/icon-advanced.svg" />
+                <div>
+                  <p class="text_title">Advanced</p>
+                  <p>$12/mo</p>
+                  <p class="text_free">2 months free</p>
+                </div>
+              </div>
+              <div tabindex="0" class="card_item">
+                <img src="assets/images/icon-pro.svg" alt="icon-arcade" />
+                <div>
+                  <p class="text_title">Pro</p>
+                  <p>$15/mo</p>
+                  <p class="text_free">2 months free</p>
+                </div>
+              </div>
+            </div>
+            <div class="selector_type">
+              <p>Monthly</p>
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider round"></span>
+              </label>
+              <p class="text_selected">Yearly</p>
+            </div>
           </div>
-          <div class="option_box">
-            <div class="num">3</div>
-            <div><span>Step 3</span> <strong>Add-ons</strong></div>
+
+          <!-- Step 2 end -->
+
+          <!-- Step 3 start -->
+          <div class="pages third_content">
+            <div class="content_title">
+              <h1 class="blue">Pick add-ons</h1>
+              <p>Add-ons help enhance your gaming experience.</p>
+            </div>
+
+            <div class="check_box_items">
+              <!-- opt 1 -->
+              <div tabindex="0" class="check_card">
+                <div class="check_icon">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                    <label class="form-check-label" for="inlineCheckbox1"></label>
+                  </div>
+                </div>
+                <div class="check_text">
+                  <p class="text_title">Online service</p>
+                  <p>Access to multiplayer games</p>
+                </div>
+                <div class="check_price">+$1/mo</div>
+              </div>
+              <!-- opt 2 -->
+              <div tabindex="0" class="check_card">
+                <div class="check_icon">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+                    <label class="form-check-label" for="inlineCheckbox1"></label>
+                  </div>
+                </div>
+                <div class="check_text">
+                  <p class="text_title">Larger storage</p>
+                  <p>Extra 1TB of cloud save</p>
+                </div>
+                <div class="check_price">+$2/mo</div>
+              </div>
+
+              <!-- opt 3 -->
+              <div tabindex="0" class="check_card">
+                <div class="check_icon">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" />
+                    <label class="form-check-label" for="inlineCheckbox1"></label>
+                  </div>
+                </div>
+                <div class="check_text">
+                  <p class="text_title">Customizable Profile</p>
+                  <p>Custom theme on your profile</p>
+                </div>
+                <div class="check_price">+$2/mo</div>
+              </div>
+            </div>
           </div>
-          <div class="option_box">
-            <div class="num">4</div>
-            <div><span>Step 4</span> <strong>Summary</strong></div>
+
+          <!-- Step 3 end -->
+          <!-- Step 4 start -->
+
+          <div class="pages fourth_content">
+            <div class="content_title">
+              <h1 class="blue">Finishing up</h1>
+              <p>Double-check everything looks OK before confirming.</p>
+            </div>
+            <div class="box_content_finishing">
+              <div class="flex_space_center">
+                <div class="box_one">
+                  <p class="text_bold">Arcade (Monthly)</p>
+                  <p>Change</p>
+                </div>
+                <div>
+                  <p class="text_bold">$9/mo</p>
+                </div>
+              </div>
+              <hr class="new1" />
+              <div class="flex_space_center box_two">
+                <div>
+                  <p class="text_lower">Online service</p>
+                  <p class="text_lower">Larger storage</p>
+                </div>
+                <div>
+                  <p class="text_bold text_lower">+$1/mo</p>
+                  <p class="text_bold text_lower">+$2/mo</p>
+                </div>
+              </div>
+            </div>
+            <div class="box_content_total flex_space_center">
+              <p class="text_lower">Total (per month)</p>
+              <p class="text_bold font_md">+$12/mo</p>
+            </div>
+          </div>
+
+          <!-- Dynamically add subscription and add-on selections here -->
+
+          <!-- Step 4 end -->
+
+          <!-- Step 5 start -->
+
+          <div class="fifth_content">
+            <div class="content_title">
+              <img src="assets/images/icon-thank-you.svg" alt="" />
+              <h1 class="blue">Thank you!</h1>
+              <p>
+                Thanks for confirming your subscription! We hope you have fun
+                using our platform. If you ever need support, please feel free
+                to email us at support@loremgaming.com.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5 end -->
+          <div class="btn_box">
+            <button class="btn_back" id="back">Go Back</button>
+            <button class="btn_next" id="next">Next Step</button>
           </div>
         </div>
-      </section>
-      <!-- Sidebar end -->
-      <section id="content">
-        <div class="content_box">
-          <!-- Step 1 start -->
-          <div class="content_box_items">
-            <div class="pages first_content">
-              <div class="content_title">
-                <h1 class="blue">Personal info</h1>
-                <p>
-                  Please provide your name, email address, and phone number.
-                </p>
-              </div>
-              <div class="content_items">
-                <div>
-                  <p class="blue">
-                    Name<span class="error_text">Error_Text</span>
-                  </p>
-                  <input
-                    type="text"
-                    class="text"
-                    placeholder=" e.g. Stephen King"
-                  />
-                </div>
+      </div>
+    </section>
+  </main>
+</body>
 
-                <div>
-                  <p class="blue">
-                    Email Address<span class="error_text">Error_Text</span>
-                  </p>
-                  <input
-                    type="text"
-                    class="text"
-                    placeholder="e.g. stephenking@lorem.com"
-                  />
-                </div>
-                <div>
-                  <p class="blue">
-                    Phone Number<span class="error_text">Error_Text</span>
-                  </p>
-
-                  <input
-                    type="text"
-                    class="text"
-                    placeholder="e.g. +1 234 567 890"
-                  />
-                </div>
-              </div>
-            </div>
-            <!-- Step 1 end -->
-            <!-- Step 2 start -->
-
-            <div class="pages second_content">
-              <div class="content_title">
-                <h1 class="blue">Select your plan</h1>
-                <p>You have the option of monthly or yearly billing.</p>
-              </div>
-              <div class="card_box">
-                <div tabindex="0" class="card_item">
-                  <img src="assets/images/icon-arcade.svg" alt="icon-arcade" />
-                  <div>
-                    <p class="text_title">Arcade</p>
-                    <p>$9/mo</p>
-                    <p class="text_free">2 months free</p>
-                  </div>
-                </div>
-                <div tabindex="0" class="card_item">
-                  <img src="assets/images/icon-advanced.svg" />
-                  <div>
-                    <p class="text_title">Advanced</p>
-                    <p>$12/mo</p>
-                    <p class="text_free">2 months free</p>
-                  </div>
-                </div>
-                <div tabindex="0" class="card_item">
-                  <img src="assets/images/icon-pro.svg" alt="icon-arcade" />
-                  <div>
-                    <p class="text_title">Pro</p>
-                    <p>$15/mo</p>
-                    <p class="text_free">2 months free</p>
-                  </div>
-                </div>
-              </div>
-              <div class="selector_type">
-                <p>Monthly</p>
-                <label class="switch">
-                  <input type="checkbox" checked />
-                  <span class="slider round"></span>
-                </label>
-                <p class="text_selected">Yearly</p>
-              </div>
-            </div>
-
-            <!-- Step 2 end -->
-
-            <!-- Step 3 start -->
-            <div class="pages third_content">
-              <div class="content_title">
-                <h1 class="blue">Pick add-ons</h1>
-                <p>Add-ons help enhance your gaming experience.</p>
-              </div>
-
-              <div class="check_box_items">
-                <!-- opt 1 -->
-                <div tabindex="0" class="check_card">
-                  <div class="check_icon">
-                    <div class="form-check form-check-inline">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        id="inlineCheckbox1"
-                        value="option1"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="inlineCheckbox1"
-                      ></label>
-                    </div>
-                  </div>
-                  <div class="check_text">
-                    <p class="text_title">Online service</p>
-                    <p>Access to multiplayer games</p>
-                  </div>
-                  <div class="check_price">+$1/mo</div>
-                </div>
-                <!-- opt 2 -->
-                <div tabindex="0" class="check_card">
-                  <div class="check_icon">
-                    <div class="form-check form-check-inline">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        id="inlineCheckbox2"
-                        value="option2"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="inlineCheckbox1"
-                      ></label>
-                    </div>
-                  </div>
-                  <div class="check_text">
-                    <p class="text_title">Larger storage</p>
-                    <p>Extra 1TB of cloud save</p>
-                  </div>
-                  <div class="check_price">+$2/mo</div>
-                </div>
-
-                <!-- opt 3 -->
-                <div tabindex="0" class="check_card">
-                  <div class="check_icon">
-                    <div class="form-check form-check-inline">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        id="inlineCheckbox3"
-                        value="option3"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="inlineCheckbox1"
-                      ></label>
-                    </div>
-                  </div>
-                  <div class="check_text">
-                    <p class="text_title">Customizable Profile</p>
-                    <p>Custom theme on your profile</p>
-                  </div>
-                  <div class="check_price">+$2/mo</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Step 3 end -->
-            <!-- Step 4 start -->
-
-            <div class="pages fourth_content">
-              <div class="content_title">
-                <h1 class="blue">Finishing up</h1>
-                <p>Double-check everything looks OK before confirming.</p>
-              </div>
-              <div class="box_content_finishing">
-                <div class="flex_space_center">
-                  <div class="box_one">
-                    <p class="text_bold">Arcade (Monthly)</p>
-                    <p>Change</p>
-                  </div>
-                  <div><p class="text_bold">$9/mo</p></div>
-                </div>
-                <hr class="new1" />
-                <div class="flex_space_center box_two">
-                  <div>
-                    <p class="text_lower">Online service</p>
-                    <p class="text_lower">Larger storage</p>
-                  </div>
-                  <div>
-                    <p class="text_bold text_lower">+$1/mo</p>
-                    <p class="text_bold text_lower">+$2/mo</p>
-                  </div>
-                </div>
-              </div>
-              <div class="box_content_total flex_space_center">
-                <p class="text_lower">Total (per month)</p>
-                <p class="text_bold font_md">+$12/mo</p>
-              </div>
-            </div>
-
-            <!-- Dynamically add subscription and add-on selections here -->
-
-            <!-- Step 4 end -->
-
-            <!-- Step 5 start -->
-
-            <div class="fifth_content">
-              <div class="content_title">
-                <img src="assets/images/icon-thank-you.svg" alt="" />
-                <h1 class="blue">Thank you!</h1>
-                <p>
-                  Thanks for confirming your subscription! We hope you have fun
-                  using our platform. If you ever need support, please feel free
-                  to email us at support@loremgaming.com.
-                </p>
-              </div>
-            </div>
-
-            <!-- Step 5 end -->
-            <div class="btn_box">
-              <button class="btn_back" id="back">Go Back</button>
-              <button class="btn_next" id="next">Next Step</button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-  </body>
 </html>
